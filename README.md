@@ -1,9 +1,3 @@
-Claro\! Fico muito feliz que esteja gostando do código e do progresso. Documentar bem um projeto, especialmente para um TCC, é tão importante quanto o próprio código. Um bom README no GitHub demonstra profissionalismo, clareza e facilita a compreensão do seu trabalho por avaliadores e futuros colaboradores.
-
-Vamos estruturar um README completo e detalhado, cobrindo todos os pontos que você mencionou.
-
------
-
 # Projeto de Análise de Logs de Rede com RAG e Mistral AI
 
 ## Sumário
@@ -385,8 +379,6 @@ while True:
 
 ## 9\. Próximos Passos e Possíveis Melhorias
 
-Este protótipo serve como uma base sólida. Para o seu TCC ou para expandir o projeto, considere as seguintes melhorias e próximos passos:
-
   * **Processamento de Logs Mais Robusto:**
       * Utilizar bibliotecas de parsing de logs (ex: `loguru`, `structlog`, ou custom parsers) para extrair campos estruturados (timestamps, IPs, níveis, IDs de eventos).
       * Tratar diferentes formatos de logs (JSON, Syslog, CSV).
@@ -411,42 +403,3 @@ Contribuições são bem-vindas\! Sinta-se à vontade para abrir issues para rep
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 -----
-
-### Para Colocar no GitHub:
-
-1.  **Crie um novo repositório no GitHub:** Vá para [github.com](https://github.com/) e crie um novo repositório (pode ser público ou privado para o TCC).
-2.  **Inicialize o Git no seu projeto local:**
-    ```bash
-    cd ~/rag_api
-    git init
-    ```
-3.  **Adicione seu arquivo `.gitignore`:** Crie um arquivo chamado `.gitignore` no mesmo diretório dos seus arquivos (`.env`, `rag_mistral_logs.py`, etc.). Adicione as seguintes linhas a ele:
-    ```
-    .env
-    __pycache__/
-    *.pyc
-    .ipynb_checkpoints/
-    .pytest_cache/
-    .chroma/ # Se o ChromaDB for persistente, isso evitará o upload do DB
-    ```
-    Isso garante que sua chave de API e outros arquivos gerados não sejam enviados para o GitHub.
-4.  **Adicione os arquivos ao Git:**
-    ```bash
-    git add .
-    ```
-5.  **Faça seu primeiro commit:**
-    ```bash
-    git commit -m "Initial commit: Prototype RAG for Network Log Analysis with Mistral AI"
-    ```
-6.  **Conecte-se ao seu repositório remoto:**
-    ```bash
-    git remote add origin <URL_DO_SEU_REPOSITORIO_GITHUB>
-    ```
-    (Substitua `<URL_DO_SEU_REPOSITORIO_GITHUB>` pelo URL que o GitHub te deu ao criar o repositório, ex: `https://github.com/seu_usuario/seu_repo.git`)
-7.  **Envie o código para o GitHub:**
-    ```bash
-    git push -u origin master
-    ```
-    (Ou `main`, dependendo do nome da branch padrão do seu repositório).
-
-Agora você terá um repositório bem documentado e pronto para ser apresentado no seu TCC\! Boa sorte\!
