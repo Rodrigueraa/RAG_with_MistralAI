@@ -20,7 +20,7 @@ if not MISTRAL_API_KEY:
 # --- 1. Carregar os logs de rede ---
 print("1. Carregando logs de rede...")
 # Usamos TextLoader para ler o arquivo .txt
-loader = TextLoader("network_logs.txt")
+loader = TextLoader("./logs/network_logs.txt")
 documents = loader.load()
 print(f"Total de documentos carregados: {len(documents)}")
 
