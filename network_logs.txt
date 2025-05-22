@@ -1,0 +1,52 @@
+2023-10-26 10:00:01 INFO User 'admin' logged in from 192.166.1.10. Session ID: A1B2C3D4.
+2023-10-26 10:00:05 WARN Failed login attempt for user 'guest' from 192.166.1.20. Reason: Invalid password.
+2023-10-26 10:01:10 ERROR Network connection dropped to 10.0.0.5 on port 80. Protocol: TCP.
+2023-10-26 10:02:00 INFO Traffic spike detected from 203.0.113.40 to 192.166.1.100. Bytes transferred: 50MB.
+2023-10-26 10:03:15 ALERT Potential DDoS attack from multiple IPs to 192.166.1.100. Source IPs: 1.1.1.1, 2.2.2.2, 3.3.3.3.
+2023-10-26 10:04:00 INFO Firewall blocked connection from 5.5.5.5 to 192.166.1.50 on port 22. Reason: SSH brute-force attempt.
+2023-10-26 10:05:00 CRITICAL Disk usage on server 'web-01' reached 95%. Path: /var/log. Immediate action required.
+2023-10-26 10:06:00 INFO System backup completed successfully for database 'prod_db'. Duration: 15min.
+2023-10-26 10:07:00 WARN High CPU utilization on server 'app-server-02', current 85%. Process: httpd.
+2023-10-26 10:08:00 ERROR Database connection pool exhausted for 'auth_service'. Check DB server 10.0.0.10.
+2023-10-26 10:09:00 INFO User 'dev_ops' modified firewall rules. Rule ID: FWR-001.
+2023-10-26 10:10:00 DEBUG Ping successful to 8.8.8.8. Latency: 20ms.
+2023-10-26 10:11:00 INFO New device registered: MAC AABBCCDDEEFF, IP 192.166.1.25.
+2023-10-26 10:12:00 ALERT Unauthorized access attempt from 172.16.0.10 to sensitive data. User: unknown.
+2023-10-26 10:13:00 INFO Software update started on server 'app-server-01'. Package: nginx.
+2023-10-26 10:14:00 WARN High memory usage on server 'db-server-01'. Current: 90%. Free: 1GB.
+2023-10-26 10:15:00 INFO Scheduled task 'daily_report_gen' completed. Status: Success.
+2023-10-26 10:16:00 ERROR Failed to establish VPN tunnel for user 'remote_user_01'. Reason: Authentication failure.
+2023-10-26 10:17:00 INFO User 'auditor' accessed security logs. IP: 192.166.1.5.
+2023-10-26 10:18:00 DEBUG DNS resolution for example.com: 93.184.216.34.
+2023-10-26 10:19:00 WARN Expiring SSL certificate for 'www.yourdomain.com'. Valid until: 2023-11-26.
+2023-10-26 10:20:00 INFO Antivirus detected clean scan. Files scanned: 15000.
+2023-10-26 10:21:00 ALERT Malware detected on host 'user-pc-03'. Filename: virus.exe. Action: Quarantined.
+2023-10-26 10:22:00 INFO Outgoing connection to 13.52.200.15 on port 443 established. Service: AWS S3.
+2023-10-26 10:23:00 CRITICAL Router 'edge-router-01' is unreachable. Network outage suspected.
+2023-10-26 10:24:00 INFO User 'admin' logged out. Session ID: A1B2C3D4.
+2023-10-26 10:25:00 WARN Disk I/O high on 'data-node-03'. Operations: 1200/sec.
+2023-10-26 10:26:00 ERROR API Gateway responded with 503 Service Unavailable. Endpoint: /api/v1/users.
+2023-10-26 10:27:00 INFO Load balancer detected unhealthy instance 'app-server-03'. Removing from pool.
+2023-10-26 10:28:00 DEBUG SSH connection initiated from 192.166.1.15 to 10.0.0.20. User: root.
+2023-10-26 10:29:00 WARN User 'johndoe' tried to access forbidden resource /admin/settings.
+2023-10-26 10:30:00 INFO VPN connection established for 'remote_user_02'. IP: 185.10.10.5.
+2023-10-26 10:31:00 ALERT Port scan detected from 6.6.6.6 targeting internal network. Ports: 1-1024.
+2023-10-26 10:32:00 INFO New firewall rule added by 'security_admin'. Rule: Deny all from 6.6.6.6.
+2023-10-26 10:33:00 INFO Successful file transfer: 'report.pdf' from 192.166.1.30 to external server.
+2023-10-26 10:34:00 ERROR Failed to update server 'db-server-01'. Package manager error.
+2023-10-26 10:35:00 INFO Certificate renewal success for 'vpn.yourcompany.com'.
+2023-10-26 10:36:00 WARN Slow query detected on 'analytics_db'. Query time: 5s.
+2023-10-26 10:37:00 INFO User 'auditor' generated compliance report. Report ID: COMP-2023-10.
+2023-10-26 10:38:00 DEBUG Health check passed for 'mail-server-01'. Service: SMTP.
+2023-10-26 10:39:00 ALERT Multiple failed logins for 'root' on 10.0.0.20 from 7.7.7.7. Brute-force in progress.
+2023-10-26 10:40:00 INFO Intrusion Detection System detected suspicious activity. Rule: SID 20010.
+2023-10-26 10:41:00 ERROR Storage array 'SAN-01' reported critical hardware failure. Impact: Data loss risk.
+2023-10-26 10:42:00 INFO User 'network_admin' configured new VLAN. VLAN ID: 100.
+2023-10-26 10:43:00 WARN System clock on 'time-server-01' is out of sync. Drift: 30s.
+2023-10-26 10:44:00 INFO Application 'ERP_App' started successfully. Version: 3.2.1.
+2023-10-26 10:45:00 CRITICAL Power supply failure on server 'core-router-01'. Network segments affected.
+2023-10-26 10:46:00 INFO User 'admin' reset password for 'guest'.
+2023-10-26 10:47:00 DEBUG Packet drop detected on interface 'eth0' of 'firewall-01'. Count: 10.
+2023-10-26 10:48:00 WARN Low disk space on '/tmp' directory for 'jenkins-server'. Free: 500MB.
+2023-10-26 10:49:00 INFO Successful database replication from 'master_db' to 'replica_db'.
+2023-10-26 10:50:00 ALERT Suspicious file download from 192.166.1.40: 'malicious.zip'. Detected by: Proxy.
