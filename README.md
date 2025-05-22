@@ -398,8 +398,3 @@ while True:
 
 Contribuições são bem-vindas\! Sinta-se à vontade para abrir issues para reportar bugs, sugerir melhorias ou enviar pull requests.
 
-## 11\. Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
------
