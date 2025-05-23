@@ -2,22 +2,14 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-# Importações dos módulos LangChain
-# TextLoader: Usado para carregar dados de arquivos de texto simples.
+
 from langchain_community.document_loaders import TextLoader
-# RecursiveCharacterTextSplitter: Divide documentos grandes em pedaços menores (chunks).
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-# HuggingFaceEmbeddings: Gera embeddings (representações vetoriais numéricas) de texto.
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-# Chroma: Um banco de vetores leve e integrado que armazena os embeddings.
 from langchain_community.vectorstores import Chroma
-# ChatPromptTemplate: Ajuda a construir prompts estruturados para modelos de chat.
 from langchain_core.prompts import ChatPromptTemplate
-# StrOutputParser: Extrai a string de texto da resposta do modelo de linguagem.
 from langchain_core.output_parsers import StrOutputParser
-# RunnablePassthrough: Permite que uma entrada seja passada diretamente para o próximo passo.
 from langchain_core.runnables import RunnablePassthrough
-# ChatMistralAI: Classe para interagir com os modelos de chat da API do Mistral AI.
 from langchain_mistralai.chat_models import ChatMistralAI
 
 # --- Configuração da Página Streamlit ---
@@ -41,7 +33,7 @@ MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 
 if not MISTRAL_API_KEY:
     st.error("MISTRAL_API_KEY não encontrada. Crie um arquivo .env com sua chave na raiz do projeto.")
-    st.stop() # Interrompe a execução do Streamlit se a chave não estiver configurada
+    st.stop() 
 
 # --- Função para Configurar o Pipeline RAG (Cacheada) ---
 # O decorador st.cache_resource garante que esta função seja executada apenas uma vez
@@ -49,10 +41,6 @@ if not MISTRAL_API_KEY:
 # Isso evita reprocessar os logs e recarregar o modelo a cada interação do usuário.
 @st.cache_resource
 def setup_rag_pipeline():
-    """
-    Configura e retorna a cadeia RAG completa.
-    Esta função é cacheada para otimizar o desempenho.
-    """
     st.spinner("Carregando e processando logs... Isso pode levar alguns segundos.")
 
     # 1. Carregamento dos Logs de Rede
@@ -130,7 +118,7 @@ st.subheader("Faça sua pergunta sobre os logs:")
 # st.text_input cria uma caixa de texto para a entrada do usuário.
 user_query = st.text_input(
     "Digite sua pergunta aqui:",
-    placeholder="Ex: Houve algum ataque DDoS recente?"
+    placeholder="Faça uma pergunta sobre os logs..."
 )
 
 # st.button cria um botão para enviar a pergunta.
